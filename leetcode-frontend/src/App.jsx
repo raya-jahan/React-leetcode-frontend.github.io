@@ -56,7 +56,21 @@ const problems2=[{
 function App() {
 
   // States
-  const [problems, setProblems] = useState([{}])
+  const [problems, setProblems] = useState([{
+//     title: " Queen's Problem",
+//     examples: [{
+//       input: "[1,2,3,4,5,6]",
+//       output: "6",
+//       explanation: "The Largest sum is 6"
+//     },
+//     {
+//       input: "[1,2,3,4,5,6,7,8,9,10,11,11,12]",
+//       output: "12",
+//       explanation: "The Largest sum is 12"
+//     }]
+}])
+
+
 //     [{
 //     title: "Raya",
 //     acceptance: "45%",
@@ -80,6 +94,42 @@ function App() {
 
 // ]
 //   )
+
+
+    
+
+// function Examples(props){
+//   return( <div style={{ border: "1px solid black"}}>
+//     <div style={{margin: 10}}>
+//         Input: <b>{props.input}</b>
+//       </div>
+
+//       <br/>
+
+//       <div style={{margin: 10}}>
+//       Output: <b>{props.output}</b>
+//       </div>
+
+//       <div style={{margin: 10}}></div>
+//       {props.explanation}
+//     </div>
+//   )
+
+// }
+
+// return(
+//   <div style={{margin: 10}}>
+//     {problems.title}
+//     {problems.examples.map(x =><Examples
+//     input={x.input}
+//     output={x.output}
+//     explanation={x.explanation}>
+
+//     </Examples>
+
+//       )}
+//   </div>
+// )
 
 
 // Adding New Problem Apple with Old Array
@@ -139,6 +189,7 @@ function ProblemStatement2(problemReceived){
 
 // Parent Component App is returning
   return (
+
     <div
     style={{
 
